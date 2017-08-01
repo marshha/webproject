@@ -1,0 +1,50 @@
+        <div class="container">
+       <script src="js/custom.js"></script>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Plan
+                <small>Start planning!</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a>
+                </li>
+                <li class="active">About</li>
+            </ol>
+        </div>
+
+    </div>
+
+<div class="row">
+                <div class="col-md-6 pull-left">
+                    <h2>Add a location</h2>
+		      <input id="event" type="textbox">
+		      <input id="desc" type="textbox">
+		      <input id="address" type="textbox" value="San Jose, CA">
+			  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+		<input type="text" id="datepicker">
+		<input id="submit" type="button" value="Geocode">
+		</div>
+	</div>
+
+
+    <div class="row">
+       		<div class="col-md-6 pull-right affix" id="map" style="height: 400px; ">MAP DIV</div>
+                <div class="col-md-6 pull-left">
+                    <h2>Location 1</h2>
+			<p>Getting ready in the morning!</p>
+		      <input id="address" type="textbox" value="Sydney, NSW">
+		      <input id="submit" type="button" value="Geocode">
+		</div>
+
+	</div>
+        </div>  <!-- container -->
+
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpTG5MGzZ-O6bOm3GzsjSffOobKuF9VHw&callback=initMap"></script>
+
