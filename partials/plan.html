@@ -19,16 +19,16 @@
 <div class="row">
                 <div class="col-md-6 pull-left">
                     <h2>Add a location</h2>
-		      <input id="event" type="textbox">
+		      <input id="title" type="textbox">
 		      <input id="desc" type="textbox">
 		      <input id="address" type="textbox" value="San Jose, CA">
 			  <script>
   $( function() {
-    $( "#datepicker" ).datepicker();
+    $( "#date" ).timepicker();
   } );
   </script>
 
-		<input type="text" id="datepicker">
+		<input type="text" id="date">
 		<input id="submit" type="button" value="Geocode">
 		</div>
 	</div>
@@ -36,15 +36,13 @@
 
     <div class="row">
        		<div class="col-md-6 pull-right affix" id="map" style="height: 400px; ">MAP DIV</div>
-                <div class="col-md-6 pull-left">
+                <div class="col-md-6 pull-left" id="event_list">
                     <h2>Location 1</h2>
 			<p>Getting ready in the morning!</p>
-		      <input id="address" type="textbox" value="Sydney, NSW">
-		      <input id="submit" type="button" value="Geocode">
 		</div>
 
 	</div>
         </div>  <!-- container -->
 
-       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpTG5MGzZ-O6bOm3GzsjSffOobKuF9VHw&callback=initMap"></script>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpTG5MGzZ-O6bOm3GzsjSffOobKuF9VHw&callback=initEvents"></script>
 
